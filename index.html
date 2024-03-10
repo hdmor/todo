@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>todo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <ul>
+        <li>
+            <label for="text">
+                <textarea id="text" rows="5" placeholder="your new text.."></textarea>
+            </label>
+        </li>
+        <li>
+            <div class="error"></div>
+            <div>
+                <button type="button" id="save">save</button>
+                <div>
+                    <button type="button" id="cancel" hidden="hidden">cancel</button>
+                    <button type="button" id="update" hidden="hidden">update</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <h3>TODO LIST</h3>
+        </li>
+        <li class="notes">
+            <ul>
+                <p class="empty">Empty list</p>
+                <!-- Add more nested items here -->
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
