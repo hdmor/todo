@@ -128,7 +128,8 @@ const doneItem = (_id, done) => {
         })
 }
 const deleteItem = _id => {
-    sendRequest("notes/" + _id, methods.DELETE).then(_ => {
-        document.querySelector(".notes > ul").removeChild(document.getElementById(_id))
-    })
+    if (window.confirm("Are you sure to delete this note?"))
+        sendRequest("notes/" + _id, methods.DELETE).then(_ => {
+            document.querySelector(".notes > ul").removeChild(document.getElementById(_id))
+        })
 }
